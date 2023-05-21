@@ -1,0 +1,19 @@
+<section class="border-bottom row" style="margin-bottom: 16px;padding-bottom: 8px;">
+       <section class="col-9">
+              <h4 style="color: rgb(120,120,120); 
+              margin-bottom:4px;">
+                {{job['title']}}
+              </h4>
+            <section>
+              <b>Location:</b> {{job['location']}}
+            </section>
+            {% if 'salary' in job %}
+             <section> 
+              <b>Salary:</b> {{job['salary']}}
+             </section>
+            {% endif %}
+       </section>
+      <section class="col-3">
+        <button type="button" class="btn btn-outline-primary">Apply</button>
+      </section>
+</section>

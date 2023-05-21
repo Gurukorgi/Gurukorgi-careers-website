@@ -24,7 +24,7 @@ JOBS=[
     'id': 4,
     'title': 'Backend Engineer',
     'location': 'Cotonou, Benin',
-    'salary': 'CFA. 1,000,000,'
+    'salary': 'CFA. 950,000,'
   }
 ]
 

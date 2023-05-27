@@ -9,16 +9,26 @@
           height: 320px;
           width: 100%;  
           object-fit: cover;
+          margin-bottom: 16px;
         }
     </style>
     <title>{{company_name}} Career</title>
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" src="static/banner.jpg" id="banner">
     <main class="container">
       <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
-      <img class="img-fluid" src="static/banner.jpg" id="banner">
-      <h2 class="text-center mt-2 mb-4">About Gurukorgi</h2>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <section class="row" style="margin-bottom:16px;">
+     <article class="col-md-6">
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+     </article>
+      <section class='d-none d-md-block col-md-6'>
+        <img src='static/people.jpg' height='320px' style="border-radius:4px;">
+      </section>
+    </section>
+            
       <h2 class="text-center mt-2 mb-4"> Job Openings </h2>
       <article> 
         {% for job in jobs %}
@@ -26,9 +36,9 @@
         {% endfor %}
       </article>
       <section class="text-center">
-        <button class="btn btn-primary btn-lg">Contact Us</button>
-        <p class="mt-4">Copyright 2023, Gurukorgi</p>
+        <a class="btn btn-primary btn-lg" href="mailto:miradoxb@gmail.com?subject=Questions%20about%20job%20openings&body=My%20Name%3A%20%3Center%20name%20here%3E%0D%0AMy%20Question%3A%20%3Center%20question%20here%3E%0D%0A">Contact Us</a>
       </section>
+      {% include 'footer.html' %}
     </main>
   </body>
 </html>

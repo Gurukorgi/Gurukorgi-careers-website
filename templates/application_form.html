@@ -2,17 +2,17 @@
 <form action="/job/{{job['id']}}/apply" method="post">
   <section class='mb-2'>
     <label>Full Name</label><br>
-    <input type='text' name='full_name' placeholder='john Peterson'>
+    <input type='text' name='full_name' required placeholder='john Peterson'>
   </section>
   
   <section class='mb-2'>
     <label>Email</label><br>
-    <input type='text' name='email' placeholder='john@yourmail.com'>
+    <input type='email' name='email' required placeholder='john@yourmail.com'>
   </section>
   
   <section class='mb-2'>
     <label>LinkedIn URL</label><br>
-    <input type='text' name='linkedin_url' placeholder='https://linkedin.com/in/johnPeterson'>
+    <input type='url' name='linkedin_url' placeholder='https://linkedin.com/in/johnPeterson'>
   </section>
 
   <section class='mb-2'>
@@ -29,7 +29,7 @@
 
   <section class='mb-2'>
     <label>Resume URL</label><br>
-    <input type='text' name='resume_url' >
+    <input type='url' name='resume_url' >
   </section>
   <input type="submit">
 </form>

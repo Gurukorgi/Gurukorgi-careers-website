@@ -7,7 +7,7 @@
    <body>
     {% include 'nav.html' %}
     {% include 'banner.html' %}
-    <nav class="container">
+    <section class="container">
       <h1 class="text-center mt-2 mb-4">Gurukorgi Careers</h1>
     <h3 class="mb-4">{{job.title}}</h3>
     <p  class="lead mt-0">{{job.location}}</p>
@@ -28,7 +28,9 @@
     
     <h4>Salary</h4>
     <p  class="lead">{{job.currency}} {{job.salary}}</p>
-    </nav>
+      {% include 'application_form.html' %}
+    </section>
+     
   </body>
   {% include 'footer.html' %}
 </html>

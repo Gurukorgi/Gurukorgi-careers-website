@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Application Submitted</title>
+    {% include 'bootstrap.html' %}
+  </head>
+  <body>
+    
+    {% include 'nav.html' %}
+    {% include 'banner.html' %}
+    <section class="container">
+      <h1 class="text-center mt-2 mb-4">Gurukorgi Careers</h1>
+      <p> Your Application  for the role of <b>{{job['title']}}</b> at gurukorgi careers been submitted</p>
+      <b>Full Name</b>
+      <section class='mb-2'> {{application['full_name']}}</section>
+    
+      <b>Email</b>
+      <section class='mb-2'>{{application['email']}}</section>
+    
+      <b>LinkedIn Url</b>
+      <section class='mb-2'>{{application['linkedin_url']}}</section>
+
+      <b>Education</b>
+      <section class='mb-2'>{{application['education']}}</section>
+
+      <b>Work Experience</b>
+      <section class='mb-2'>{{application['experience']}}</section>
+
+      <b>Resume URL</b>
+      <section class='mb-2'>{{application['resume_url']}}</section>
+    </section>
+  </body>
+  {% include 'footer.html' %}
+</html>
